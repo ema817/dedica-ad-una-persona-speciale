@@ -30,7 +30,8 @@
                 opacity: 1;
             }
             100% {
-                transform: translateY(100vh) translateX(50px);
+                /* non sposterci orizzontalmente per evitare overflow */
+                transform: translateY(100vh) translateX(0);
                 opacity: 0;
             }
         }
@@ -177,7 +178,7 @@
         /* immagine mamma/bambina */
         .foto {
             width: 100%;
-            max-width: 400px;
+            max-width: 250px; /* immagine più piccola */
             border-radius: 12px;
             margin: 0 auto 20px;
             display: block;
